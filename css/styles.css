@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Остальной код */
+
+
 /* цвет основного текста #212121 */
 /* цвет фона #FFFFFF */
 /* вторичный цвет текста #757575 */
@@ -18,6 +31,8 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.14;
+
+  margin: 0;
 }
 
 .list {
@@ -27,6 +42,10 @@ body {
 /*веб студио*/
 
 /*header*/
+.page-header{
+
+}
+
 .logo {
   font-family: Raleway;
   font-size: 26px;
@@ -103,9 +122,6 @@ body {
 }
 
 /*преимущества*/
-.details {
-}
-
 .details-desc {
   color: var(--secondary-text-color);
 }
@@ -211,6 +227,11 @@ body {
 
 /*button*/
 .button-veb {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -220,7 +241,12 @@ body {
   text-decoration: none;
 }
 
-.button-demo {
+.button-demo button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  text-align: center;
+
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
@@ -230,17 +256,42 @@ body {
   list-style: none;
 }
 
-.button-demo:hover,
-.button-demo:focus {
+.button-demo button:hover,
+.button-demo button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
+.button-all {
+min-width: 73px;
+}
+.button-web {
+  min-width: 128px;
+}
+.button-web {
+  min-width: 128px;
+}
+.button-demo-applications {
+  min-width: 145px;
+}
+.button-demo-design {
+  min-width: 103px;
+}
+.button-demo-marketing {
+  min-width: 130px;
+}
+
 .button-footer {
+  border-radius: 4px;
+  padding: 10px 28px 10px 29px;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
+  text-align: center;
 }
-.button-demo
+
+/*ставится в блоке
+outline: 2px solid red;*/
