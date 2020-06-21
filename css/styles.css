@@ -43,7 +43,7 @@ body {
 
 /*header*/
 .page-header{
-
+  outline: 2px solid red;
 }
 
 .logo {
@@ -90,7 +90,6 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  list-style: none;
 }
 
 .contacts .contacts-mail:hover,
@@ -103,7 +102,6 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  list-style: none;
 }
 
 .contacts .contacts-tel:hover,
@@ -111,6 +109,9 @@ body {
   color: var(--accent-color);
 }
 
+.contacts>li {
+  list-style: none;
+}
 /*hero*/
 .hero {
   color: #fff;
@@ -125,6 +126,9 @@ body {
 .details-desc {
   color: var(--secondary-text-color);
 }
+.details>li {
+  list-style: none;
+}
 
 /*услуги*/
 .services {
@@ -137,7 +141,9 @@ body {
 .services-features {
   color: #fff;
   font-weight: bold;
-  text-decoration: none;
+}
+
+.services-list>li {
   list-style: none;
 }
 
@@ -159,11 +165,19 @@ body {
   color: var(--secondary-text-color);
 }
 
+.employees-list>li {
+  list-style: none;
+}
+
 .title-clients {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   font-weight: 700;
+}
+
+.clients-list>li {
+  list-style: none;
 }
 
 /*футер*/
@@ -299,32 +313,7 @@ outline: 2px solid red;*/
 
 
 /* Используйте разметку и эти стили для практики рассматриваемых свойств */
-.container {
-  display: flex;
 
-  width: 750px;
-  padding: 30px;
-
-  background-color: #455a64;
-}
-
-.element {
-  width: 150px;
-  height: 150px;
-
-  font-size: 24px;
-  text-align: center;
-  line-height: 150px;
-}
-
-.pink {
-  background-color: #e91e63;
-}
-
-.blue {
-  background-color: #2196f3;
-}
-
-.amber {
-  background-color: #ffc107;
+.list-item:nth-child(n + 6) {
+  background-color: orange;
 }
