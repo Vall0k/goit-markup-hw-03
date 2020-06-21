@@ -74,10 +74,20 @@ body {
 }
 
 .site-nav {
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
   list-style: none;
   outline: 1px solid tomato; 
+}
+
+.site-nav .item {
+  margin-right: 50px;
+  outline: 1px solid tomato; 
+}
+
+.site-nav .item:last-child {
+margin-right: 0;
 }
 
 .site-nav .page:hover,
@@ -86,10 +96,6 @@ body {
 }
 
 .site-nav .page.current-veb {
-  color: var(--accent-color);
-}
-
-.site-nav .page.current-portfolio {
   color: var(--accent-color);
 }
 
