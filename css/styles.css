@@ -157,7 +157,7 @@ body {
 }
 
 /*услуги*/
-.services {
+.services-title {
   font-size: 36px;
   line-height: 1.16;
   font-weight: 700;
@@ -173,8 +173,9 @@ body {
   margin-bottom: 0;
 }
 
-.services-list>li {
+.services-list a {
   list-style: none;
+  text-decoration: none;
 }
 
 /*команда*/
@@ -259,38 +260,52 @@ body {
 }
 
 /*портфолио*/
-.portfolio {
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+ }
+
+ 
+.project-list {
+  margin-top: 0;
+  margin-bottom: 0;
   text-decoration: none;
-  list-style: none;
+  outline: 2px solid red;
 }
 
-.project {
+
+.project-desc {
+  color: white;
+  font-size: 18px;
+  line-height: 1.56;
+
+  margin-top: 0;
+  margin-bottom: 83px;
+}
+
+.project-name {
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-decoration: none;
-}
+
+  margin-top: 0;
+  margin-bottom: 4px;
+ }
 
 .project-type {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
 
-  text-decoration: none;
-}
-
-.project-desc {
-  color: white;
-  font-size: 18px;
-  line-height: 1.56;
-  text-decoration: none;
-}
-
-.project-list>li {
-  list-style: none;
-}
+  margin-top: 0;
+  margin-bottom: 0;
+ }
 
 /*button*/
 .button-web {
@@ -322,6 +337,13 @@ body {
   line-height: 1.63;
   text-decoration: none;
   list-style: none;
+  outline: 2px solid red;
+}
+
+.button-demo-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: 2px solid red;
 }
 
 .button-demo button:hover,
