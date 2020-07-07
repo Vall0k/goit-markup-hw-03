@@ -58,19 +58,34 @@ body {
 }
 
 .header-logo-studio {
+  margin-right: 85px;
   color: black;
 }
 
 .list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  outline: 1px solid tomato; 
+}
+
+.contacts .item + .item {
+  margin-left: 30px;
+}
+
+.page {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: inherit;
+  text-decoration: none;
 }
 
 
-.page {
-  color: inherit;
-  text-decoration: none;
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -91,6 +106,9 @@ margin-right: 50px;
 }
 
 .site-nav .page.current-veb {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--accent-color);
 }
 
@@ -121,6 +139,11 @@ margin-right: 50px;
 .contacts>li {
   list-style: none;
 }
+
+.mail-tel {
+margin-left: auto;  
+}
+
 /*hero*/
 .hero {
   text-align: center;
