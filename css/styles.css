@@ -166,6 +166,11 @@ margin-left: auto;
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+.details .details-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .details {
   margin-top: 0;
   margin-bottom: 0;
@@ -176,9 +181,7 @@ margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
-.details>li {
-  list-style: none;
-}
+
 
 /*услуги*/
 .services-title {
@@ -190,11 +193,19 @@ margin-left: auto;
   margin-bottom: 50px;
 }
 
+.service {
+  text-align: center;
+}
+
 .services-features {
   color: #fff;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.services-list {
+  justify-content: space-between;
 }
 
 .services-list a {
@@ -230,8 +241,20 @@ margin-left: auto;
   margin-bottom: 16px;
 }
 
+.employees-list {
+  justify-content: space-between;
+}
+
+.employer {
+text-align: center;
+}
+
 .employees-list>li {
   list-style: none;
+}
+
+.social-link {
+  display: flex;
 }
 
 .title-clients {
@@ -241,6 +264,10 @@ margin-left: auto;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.clients-list {
+  justify-content: space-between;
 }
 
 .clients-list>li {
@@ -257,6 +284,8 @@ margin-left: auto;
 }
 
 .footer-adress {
+  padding-top: 45px;
+  margin-right: 69px;
   color: #fff;
   font-size: 14px;
   line-height: 1.71;
