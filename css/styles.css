@@ -156,12 +156,18 @@ margin-left: auto;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  background-color: #212121;
  
   margin-top: 0;
   margin-bottom: 30px;
 }
 
 /*преимущества*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -275,8 +281,8 @@ text-align: center;
 }
 
 /*футер*/
-.footer {
-  background-color: #2F303A;
+.footer-section{ 
+ background-color: #2F303A;
 }
 
 .logo-studio {
@@ -305,14 +311,22 @@ text-align: center;
   line-height: 1.71;
 }
 
-.author {
+.copyright {
   color: rgba(255, 255, 255, 0.4);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 18px;
+  margin-bottom: 21px;
   text-align: center;
+
+  outline: 2px solid red;
 }
 
 /*портфолио*/
+.portfolio {
+  margin-top: 93px;
+  margin-bottom: 94px;
+}
+
+
 .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -325,6 +339,7 @@ text-align: center;
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 
   outline: 2px solid red;
 }
